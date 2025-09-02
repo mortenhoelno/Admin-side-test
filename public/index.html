@@ -1,10 +1,55 @@
 <!DOCTYPE html>
 <html lang="no">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Hei Morten</title>
-  </head>
-  <body>
-    <h1>Hei Morten</h1>
-  </body>
-</html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adminpanel</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #333;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    main {
+      padding: 2rem;
+    }
+    .card {
+      background: white;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+    .button {
+      padding: 0.5rem 1rem;
+      background: #0070f3;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .button:hover {
+      background: #0059c1;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Adminpanel</h1>
+  </header>
+  <main>
+    <div class="card">
+      <h2>Velkommen, Morten!</h2>
+      <p>Her kan du administrere ting, late som du har kontroll og trykke på knapper du ikke forstår.</p>
+      <button class="button" onclick="alert('Knapp trykket – du er offisielt admin nå.')">Trykk meg</button>
+    </div>
+
+    <div class="card">
+      <h3>Systemstatus</h3>
